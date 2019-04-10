@@ -1,0 +1,106 @@
+.navbar {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+  	border-bottom: 2px solid #1dd1a1;
+}
+
+.navbar-container {
+	width: 70%;
+	margin: auto;
+}
+
+.navbar-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 0;
+	padding: 16px 0;
+}
+
+.navbar-brand {
+	margin: auto;
+	display: inline-block;
+}
+
+#brand {
+	height: 36px;
+}
+
+.navbar-toggle-button {
+	display: none;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.navbar-items {
+	padding: 0;
+}
+
+.navbar-items {
+	display: block;
+	padding: 8px 0px 16px 0px;
+}
+
+.navbar-left-content, .navbar-right-content {
+  display: inline;
+}
+
+.navbar-right-content {
+  float: right;
+}
+
+.navbar-items a {
+  font-family: "Oswald";
+  font-size: 24px;
+  padding: 16px 0 ;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: #505050;
+}
+
+.navbar-left-content a, .navbar-right-content a{
+  padding: 0 16px;
+}
+
+.navbar-left-content a:nth-child(1) {
+	padding-left: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+	.navbar-container {
+		width: 80%;
+	}
+
+	.navbar-toggle-button {
+		display: flex;
+	}
+
+	.navbar-brand {
+		margin: 0;
+	}
+
+	.navbar-items {
+		border-left: 2px solid #1dd1a1;
+		display: none;
+	}	
+
+	.navbar-right-content, .navbar-right-content {
+	  display: block;
+	  float: none;
+	}
+
+	.navbar-left-content a, .navbar-right-content  a{
+	  display: block;
+	  padding: 16px;
+	}
+
+	.navbar-left-content a:nth-child(1) {
+		padding-left: 16px;
+	}
+}
